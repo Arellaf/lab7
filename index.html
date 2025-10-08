@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab7</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="header__container">
+        <h1>Website</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Слайдер</a></li>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="main__container">
+        <h2>Демонстрація елементів jQuery UI</h2>
+
+        <section class="slider-section">
+            <h3>Слайдер</h3>
+            <div id="slider"></div>
+            <p>Обране значення: <span id="slider-value">50</span></p>
+        </section>
+
+        <section class="accordion-section">
+            <h3>Випадаюче меню</h3>
+            <div id="accordion">
+                <h3>Пункт 1</h3>
+                <div><p>Lorem ipsum dolor sit amet.</p></div>
+                <h3>Пункт 2</h3>
+                <div><p>Lorem ipsum dolor sit amet.</p></div>
+                <h3>Пункт 3</h3>
+                <div><p>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3>Галерея з діалогом</h3>
+            <div class="gallery">
+                <img src="/img/img1.jpg">
+                <img src="/img/img2.jpg">
+                <img src="/img/img3.jpg">
+            </div>
+            <div id="dialog" title="Зображення">
+                <img id="dialog-img" src="">
+            </div>
+        </section>
+
+        <section class="tabs-section">
+            <h3>Контактна форма</h3>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Про нас</a></li>
+                    <li><a href="#tabs-2">Зворотній зв’язок</a></li>
+                    <li><a href="#tabs-3">Локація</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, adipisci!</p>
+                </div>
+                <div id="tabs-2">
+                    <form id="contact-form">
+                        <label for="name">Ім’я:</label><br>
+                        <input type="text" id="name" placeholder="Ваше ім’я"><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+
+                        <label for="message">Повідомлення:</label><br>
+                        <textarea id="message" rows="4" placeholder="Ваше повідомлення..."></textarea><br><br>
+
+                        <button id="send-btn" type="button">Надіслати</button>
+                    </form>
+                </div>
+                <div id="tabs-3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, nostrum.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footer__container">
+        <p>© 2025 website | lab7</p>
+    </div>
+</footer>
+
+</body>
+</html>
